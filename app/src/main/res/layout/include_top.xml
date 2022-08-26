@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:elevation="@dimen/dp_2"
+    app:navigationIcon="@mipmap/icon_back">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="图像输入"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_all_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="deleteAll"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:text="全删"
+        android:padding="@dimen/dp_12"/>
+</com.google.android.material.appbar.MaterialToolbar>
+
